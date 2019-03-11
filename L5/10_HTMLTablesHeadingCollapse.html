@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <h3>Adding Table Headings</h3>
+        <table border="1">
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>Data Element 1</td>
+                <td>Data Element 2</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Emptry Cell in Table</h3>
+        <table border="1">
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td> <!--EmptyCell-->
+                <td>Data Element 2</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Table with a caption</h3>
+        <table border="1">
+            <caption>CAPTION OF THE TABLE</caption>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>Data Element 1</td>
+                <td>Data Element 2</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Table with cellspacing and cellpadding </h3>
+        <table border="1" style="border-spacing:12px">
+            <tr>
+                <th style="padding:25px">Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>Data Element 1</td>
+                <td>Data Element 2</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Table cells that span more than one row/column </h3>
+        <table border="1">
+            <tr>
+                <td colspan="2">Data Element 1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                
+                <td>Data 5</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Tags inside the table</h3>
+        <table border="1">
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>This is a paragraph inside the cell</p>
+                </td>
+                <td>
+                    <img src="Waterfall.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <p>Right cell contains another table</p>
+                </td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>Heading 1</th>
+                            <th>Heading 2</th>
+                        </tr>
+                        <tr>
+                            <td>Data Element 1</td>
+                            <td>Data Element 2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Content Alignment</h3>
+        <table border="1">
+            <tr>
+                <th style="text-align:left">Money spent on...</th>
+                <th style="text-align:left">January (Jan)</th>
+                <th style="text-align:left">February</th>
+            </tr>
+            <tr>
+                <td style="text-align:center">Clothes</td>
+                <td style="text-align:right">Rs.20,000/=</td>
+                <td style="text-align:right">Rs.10,000/=</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Set Background color for entire table</h3>
+        <table border="1" style="background-color:red">
+            <tr>
+                <th  align="left">Money spent on...</th>
+                <th align="right">January (Jan)</th>
+                <th align="right">February</th>
+            </tr>
+            <tr>
+                <td align="center">Clothes</td>
+                <td align="right">Rs.20,000/=</td>
+                <td align="right">Rs.10,000/=</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Set Background color for cells</h3>
+        <table border="1">
+            <tr>
+                <th style="background-color:yellow" >Money spent on...</th>
+                <th style="background-color:red">January (Jan)</th>
+                <th style="background-color:green">February</th>
+            </tr>
+            <tr>
+                <td>Clothes</td>
+                <td>Rs.20,000/=</td>
+                <td>Rs.10,000/=</td>
+            </tr>
+        </table>
+        <!--*************************************-->
+        <h3>Define groups of table columns &lt;colgroup &gt;</h3>
+        <table border="1">
+            <colgroup>
+                <col span="2" bgcolor="green">
+                <col bgcolor="magenta">
+            </colgroup>
+            <tr>
+                <th>Money spent on...</th>
+                <th>January (Jan)</th>
+                <th>February</th>
+            </tr>
+            <tr>
+                <td>Clothes</td>
+                <td>Rs.20,000/=</td>
+                <td>Rs.10,000/=</td>
+            </tr>
+            <tr>
+                <td>Foods</td>
+                <td>Rs.8,000/=</td>
+                <td>Rs.19,000/=</td>
+            </tr>
+        </table>
+       
+        <p>Finish!</p>
+    </body>
+</html>

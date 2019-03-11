@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h2>HTML Forms</h2>
+        <h3>Adding Text Fields</h3>
+        <form action="">
+            First Name : <input type="text" name="firstname"> <br> <br>
+            Last Name : <input type="text" name="lastname"> <br>
+        </form>
+        <hr>
+        <!--**********************-->
+        <h3>Adding Password Fields</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br>
+        </form><hr>
+        <!--**********************-->
+        <h3>Adding Textarea</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            Address :   <textarea name="address" cols="20" rows="5"> 
+                            Address
+                        </textarea><br>
+        </form>
+        <hr>
+        <!--**********************-->
+        <h3>Adding Radio Buttons</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            Gender : <input type="radio" name="sex" value="male"> Male
+            <input type="radio" name="sex" value="female"> Female<br> <br>
+        </form>
+        <hr>
+        <!--**********************-->
+        <h3>Adding Checkboxes</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            Gender : <input type="radio" name="sex" value="male"> Male
+            <input type="radio" name="sex" value="female"> Female<br> <br>
+            <input type="radio" name="sex1" value="female"> Test<br> <br>
+            Tick on type of documents to identify you : <br>
+                <input type="checkbox" name="privacy" value="nic"> National Identity Card (NIC)<br> <br>
+                <input type="checkbox" name="privacy" value="strecrd"> Student Record Book<br> <br>
+                <input type="checkbox" name="privacy" value="stdc"> Student Identity Card<br> <br>
+                <input type="checkbox" name="privacy" value="birth"> Birth Certificate<br> <br>
+        </form>
+        
+        <hr>
+        <!--**********************-->
+        <h3><i>Checked</i> Attribute</h3>
+        <form action="">
+            Gender : 
+                <input type="radio" name="sex" value="male" checked="checked"> Male
+                <input type="radio" name="sex" value="female" checked="checked"> Female<br> <br>
+            Tick on type of documents to identify you : <br>
+                <input type="checkbox" name="privacy" value="nic" checked="checked"> National Identity Card (NIC)<br> <br>
+                <input type="checkbox" name="privacy" value="strecrd"> Student Record Book<br> <br>
+                <input type="checkbox" name="privacy" value="stdc"> Student Identity Card<br> <br>
+                <input type="checkbox" name="privacy" value="birth"> Birth Certificate<br> <br>
+        </form>
+        <hr>
+        <!--**********************-->
+        <h3>Simple Drop-down box</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            Gender : 
+            <select name="gender">
+                <option name="female">Female</option>
+                <option name="male">Male</option>
+            </select>
+        </form>
+        <hr>
+        <!--**********************-->
+        <h3><i>Selected</i> Attribute</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            Gender : 
+            <select name="gender">
+                <option name="female">Female</option>
+                <option name="male" selected="selected">Male</option>
+            </select>
+        </form>
+        
+        <hr>
+        <!--**********************-->
+        <h3>HTML Buttons</h3>
+        <form action="">
+            User Name : <input type="text" name="username"> <br> <br>
+            Password : <input type="password" name="pass"> <br> <br>
+            <input type="button" onclick="history.go(-1);" value="Back">
+        </form>
+    </body>
+</html>

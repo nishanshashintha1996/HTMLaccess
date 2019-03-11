@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h2>HTML Forms 2</h2>
+        <h3>Adding Submit/Reset Buttons</h3>
+        <form action="12_Forms.html" method="get">
+            First Name : <input type="text" name="firstname"> <br> <br>
+            Last Name : <input type="text" name="lastname"> <br> <br>
+            <input type="submit" value="Go to HTML Form 1">
+            <input type="reset" value="Clear">
+        </form>
+        <br>
+        <hr>
+        <br>
+        <h3>Send email from the form</h3>
+        <form action="MAILTO:someone@gmail.com" method="post" enctype="multipart/form-data">
+            <!--enctypes : text/plain, multipart/form-data, application/x-www-form-urlencoded(default)-->
+            <!--text/plain - Spaces are converted to "+" symbols, but no special characters are encoded-->
+            <!--multipart/form-data - No characters are encoded. This value is required when you are using forms that have a file upload control-->
+            <!--application/x-www-form-urlencoded(default) - All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)-->
+            Subject : <input name="subject" type="text"> <br> <br>
+            Message : <textarea name="textmsg" cols="25" rows="5"></textarea> <br> <br>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+        <h3>General Form</h3>
+        <fieldset>
+            <legend>
+                General Form
+            </legend>
+            <form>
+                Text:<input maxlength="3" type="text" required><br> <br>
+                Number (maxLength:3, min:100, max:980):<input type="number" size="3" min=100 max="980"><br> <br>
+                range:<input type="range" min=100 max="980"><br> <br>
+                Color:<input type="color"><br> <br>
+                File:<input type="file"><br> <br>
+                Date:<input type="date"><br> <br>
+                Date and Time:<input type="datetime"><br> <br>
+                Email:<input type="email"><br> <br>
+                
+                Search:<input type="search"><br> <br>
+                URL:<input type="url"><br> <br>
+                Week:<input type="week"><br> <br>
+                <input type="submit"><br> <br>
+            </form>
+        </fieldset>
+    </body>
+</html>

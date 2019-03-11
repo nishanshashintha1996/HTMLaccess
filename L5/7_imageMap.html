@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Turn an image to a map</h2>
+    <p>
+        Move the mouse over the image, and look at the status bar to see how the coordinates change.
+    </p>
+    <p>
+        <a href="images/space.jpg">
+            <img src="images/space.jpg" ismap style="width:720;height:540">
+        </a>
+    </p>
+    
+    <!--******************************-->
+<h2>Image Map</h2>    
+<p>Click on the one of the planets to watch it closer:</p>
+<img src="images/space.jpg" style="width:720;height:540" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,14,300,540" alt="Sun" href="images/sun.jpg">
+  <area shape="circle" coords="410,208,45" alt="Earth" href="images/earth1.jpg">
+  <area shape="circle" coords="640,88,23" alt="Venus" href="images/moon.jpg">
+    <!--area shape="poly" coords="x1,y1,x2,y2,...,xn,yn" alt="Image1" href="images/star.jpg"-->
+</map>
+
+</body>
+</html>
